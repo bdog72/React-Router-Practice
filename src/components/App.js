@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import VotingApp from './VotingApp'
-import TimeTrackingApp from './TimeTrackingApp'
+
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 const BasicExample = () => (
@@ -8,32 +7,32 @@ const BasicExample = () => (
     <div>
       <ul>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/voting'>Voting App</Link></li>
-        <li><Link to='/topics'>Time Tracking App</Link></li>
+        <li><Link to='/ex1'>Example 1</Link></li>
+        <li><Link to='/ex2'>Example 2</Link></li>
       </ul>
       <hr />
       <Route exact path='/'component={Home} />
-      <Route path='/voting'component={Voting} />
-      <Route path='/topics'component={Topics} />
+      <Route path='/ex1'component={Voting} />
+      <Route path='/ex2'component={Topics} />
     </div>
   </Router>
 )
 
 const Home = () => (
   <div>
-    <h1 className='fsrHead'>FULL STACK REACT</h1>
+    <h1 className='fsrHead'>REACT ROUTER</h1>
   </div>
 )
 
 const Voting = () => (
   <div>
-    <VotingApp />
+    <h1>Bdog1</h1>
   </div>
 )
 
 const Topics = () => (
   <div>
-    <TimeTrackingApp />
+    <h1>Bdog2</h1>
   </div>
 )
 

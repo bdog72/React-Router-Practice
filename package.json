@@ -38,6 +38,7 @@
     "react-router-dom": "^4.1.1",
     "redbox-react": "^1.4.2",
     "sass-loader": "^6.0.6",
+    "semantic-ui": "^2.2.10",
     "style-loader": "^0.18.2",
     "stylelint": "^7.11.1",
     "stylelint-config-standard": "^16.0.0",
